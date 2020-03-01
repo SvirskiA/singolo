@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Lato";
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    width: 940px;
+    margin: auto;
+}
+.portfolio{
+    width: 1020px;
+    height: 864px;
+    background-color: #2d303a;
+    margin: auto;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    padding: 69px 0 25px 0;
+}
+.portfolio__wrapper p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-weight: 300;
+}
+.portfolio_navigation {
+    display: flex; 
+    list-style: none;
+    padding: 12px 0 18px 0;
+}
+.portfolio__navigation_list a{
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    padding: 3px 7px 3px 6px;
+    margin-right: 9px;
+}
+
+.portfolio_checked a{
+    border: 1px solid #c5c5c5;
+    color: #c5c5c5;  
+}
+.portfolio__navigation_list a:hover {
+    border: 1px solid #c5c5c5;
+    color: #c5c5c5;      
+}
+
+/*Images*/
+.porfolio__images{
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.porfolio__images img {
+    padding-bottom: 20px;
+}
+
+.line-after-portfolio {
+    width: 1020px;
+    margin: auto;   
+    height: 6px;
+    background-color: #323746;
+}
+/*About Us*/
+.about{
+    width: 1020px;
+    height: 728px;
+    background-color: #f2f2f2;
+    margin: auto;
+}
+.about__para {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-weight: 300;
+    text-align: left;
+    padding-bottom: 46px;
+}
+.about__persons {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* width: 302px; */
+}
+
+.person_descrption h3{
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    padding: 13px 0 10px
+}
+.person_descrption p{
+    width: 300px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-weight: 400;
+    text-align: left;
+}
+
+/*Icons*/
+.person_networks{
+    padding-top: 20px;
+}
+.networks_icon {
+    padding-right: 3px;
+}
+.networks_icon:hover {
+    background-color: #323746;    
+}
