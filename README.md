@@ -1,1 +1,1 @@
-# https://SvirskiA.github.io/rsschool-cv/index
+# https://SvirskiA.github.io/singolo/index
