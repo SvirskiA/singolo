@@ -11,9 +11,17 @@
 </head>
 
 <body>
+    <div class="burger_background">
+    </div>
+    <div class="shadow"></div>
     <header class="header" id="header">
+        <div class="burger">
+            <img src="assets/Burger-menu-icon.svg" alt="menu" id="burger">
+        </div>
+
         <div class="wrapper header__wrapper">
-            <div class="logo">SINGOLO<span>*</span></div>
+
+            <h1 class="logo">SINGOLO<span>*</span></h1>
             <nav class="header__navigation">
                 <ul class="navigation">
                     <li class="navigation__list"><a href="#header">HOME</a></li>
@@ -27,35 +35,35 @@
     </header>
     <div class="dawn-line-dark"></div>
     <div class="slider">
-		<div class="slider_sliders">
-			<div class="wrapper slider__wrapper_one">
-				<div class="slider__wrapper_one_imgs">
-					<img src="assets/iPhone Vertical.png" class="slider__vertical" alt="#">
-					<div class="slider__vertical-phone_background"></div>
-					<img src="assets/iPhone Horizontal.png" class="slider__horizontal" alt="#">
-					<div class="slider__horisontal-phone_background"></div>
-				</div>
-			</div>
-			<div class="wrapper slider__wrapper_two">
-				<div class="slider__wrapper_two_imgs">
-			 		<img src="assets/phone-vertical.png" class="slider__slide2" alt="#">
-					<img src="assets/slider-content.png" class="slider__slide2_add1" alt="#">
-					<img src="assets/slider-content.png" class="slider__slide2_add2" alt="#"> 
-				</div>
-			</div>
-		</div>
-		<div class="wrapper slider__buttons_wrapper">
-		    <button class="slider__button slider__button_left"><img src="assets/chev.svg" class="slider__arrow1"
+        <div class="slider_sliders">
+            <div class="wrapper slider__wrapper_one">
+                <div class="slider__wrapper_one_imgs">
+                    <img src="assets/iPhone Vertical.png" class="slider__vertical" alt="#">
+                    <div class="slider__vertical-phone_background"></div>
+                    <img src="assets/iPhone Horizontal.png" class="slider__horizontal" alt="#">
+                    <div class="slider__horisontal-phone_background"></div>
+                </div>
+            </div>
+            <div class="wrapper slider__wrapper_two">
+                <div class="slider__wrapper_two_imgs">
+                    <img src="assets/phone-vertical.png" class="slider__slide2" alt="#">
+                    <img src="assets/slider-content.png" class="slider__slide2_add1" alt="#">
+                    <img src="assets/slider-content.png" class="slider__slide2_add2" alt="#">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper slider__buttons_wrapper">
+            <button class="slider__button slider__button_left"><img src="assets/chev.svg" class="slider__arrow1"
                     alt="#"></button>
             <button class="slider__button slider__button_right"><img src="assets/chev.svg" class="slider__arrow1"
                     alt="#"></button>
-		</div>
+        </div>
     </div>
     <div class="dawn-line-red"></div>
     <div class="services" id="services">
         <div class="wrapper">
             <div class="services__description">
-                <h1>Our Services</h1>
+                <h2>Our Services</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
                     nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
                     tortor mauris condimentum nibh.</p>
@@ -93,6 +101,7 @@
             </div>
         </div>
     </div>
+    <div class="dawn-line-white"></div>
     <div class="portfolio" id="portfolio">
         <div class="wrapper portfolio__wrapper">
             <h2>Portfolio</h2>
@@ -125,13 +134,16 @@
     <div class="about" id="about">
         <div class="wrapper about__wrapper">
             <h2>About Us</h2>
-            <p class="about__para">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p class="about__para">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
+                erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
+                mauris condimentum nibh.</p>
             <div class="about__persons">
                 <div class="about__persons_person">
                     <img class="about__person_photo" src="assets\person1.png" alt="person">
                     <div class="person_descrption">
                         <h3>Adam Jensen</h3>
-                        <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                        <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor
+                            id lorem.</p>
                     </div>
                     <div class="person_networks">
                         <a><img src="assets\facebook.png" alt="icon" class="networks_icon"></a>
@@ -144,7 +156,8 @@
                     <img class="about__person_photo" src="assets\person2.png" alt="person">
                     <div class="person_descrption">
                         <h3>Desmond Miles</h3>
-                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut,
+                            ultrices velit.</p>
                     </div>
                     <div class="person_networks">
                         <a><img src="assets\facebook.png" alt="icon" class="networks_icon"></a>
@@ -157,7 +170,8 @@
                     <img class="about__person_photo" src="assets\person3.png" alt="person">
                     <div class="person_descrption">
                         <h3>Scolara Visari</h3>
-                        <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                        <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+                            Quisque condimentum.</p>
                     </div>
                     <div class="person_networks">
                         <a><img src="assets\facebook.png" alt="icon" class="networks_icon"></a>
@@ -169,6 +183,7 @@
             </div>
         </div>
     </div>
+    <div class="dawn-line-white"></div>
     <div class="quote-form" id="quote">
         <div class="wrapper form__wrapper">
             <h2>Get a Quote</h2>
@@ -184,7 +199,7 @@
                         maxlength="30" required>
                     <input type="text" name="subject" id="subject" placeholder="Subject">
                     <input type="text" name="describe" id="describe" placeholder="Descripe your project in deatil...">
-                    <input type="submit" value="Submit" id="submit_btn">
+                    <input type="submit" value="SEND" id="submit_btn">
                 </form>
                 <div class="quote-form__information">
                     <h3>Contact Information</h3>
@@ -202,7 +217,7 @@
             </div>
         </div>
     </div>
-    <div class="dawn-line-red"></div>
+    <div class="dawn-line-red dawn-line-red-second"></div>
     <footer class="footer">
         <div class="wrapper">
             <div class="footer__section">

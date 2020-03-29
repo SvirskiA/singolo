@@ -1,1 +1,1 @@
-# singolo
+# https://SvirskiA.github.io/singolo/index

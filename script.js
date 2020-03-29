@@ -4,6 +4,7 @@ let portfolioTab = document.querySelectorAll('.portfolio_navigation');
 let portfolioImagesWrapper = document.querySelector('.porfolio__images');
 let navigationList = document.querySelectorAll('.navigation__list');
 
+
 function randomInteger(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -13,6 +14,7 @@ for (let elem of navigationList) {
     elem.classList.remove('checked');
     elem.onclick = function () {
         resetNavs();
+        burgerMenuOff();
         elem.classList.add('checked');
     }
 }
@@ -25,6 +27,45 @@ function resetNavs() {
 
 // HEADER
 
+// Burger
+let burgerMenu = document.getElementById('burger');
+let burgerBackground = document.querySelector('.burger_background');
+let shadow = document.querySelector('.shadow');
+let navigation = document.querySelector('.header__navigation');
+let navigationUl = document.querySelector('.navigation');
+let headerWrapper = document.querySelector('.header__wrapper');
+
+let burgerFlag = true;
+
+function burgerMenuOn(){
+    burgerFlag = false;
+    burgerMenu.classList.add('burger_click');
+    burgerBackground.classList.add('burger_background_click');
+    shadow.classList.add('shadow_click');
+    navigation.classList.add('header__navigation_click');
+    navigationUl.classList.add('navigation_click');
+    headerWrapper.classList.add('header__wrapper_click');
+}
+function burgerMenuOff(){
+    burgerFlag = true;
+    burgerMenu.classList.remove('burger_click');
+    burgerBackground.classList.remove('burger_background_click');
+    shadow.classList.remove('shadow_click');
+    navigation.classList.remove('header__navigation_click');
+    navigationUl.classList.remove('navigation_click');
+    headerWrapper.classList.remove('header__wrapper_click');
+
+}
+
+burgerMenu.onclick = function(){
+    if(burgerFlag){
+        burgerMenuOn()
+    } else {
+        burgerMenuOff()
+    }
+}
+
+// Scroll
 let header = document.querySelector('.header');
 
 window.addEventListener('scroll', function () {
@@ -224,6 +265,8 @@ function moveImges(tab) {
 
     tab.onclick = function (e) {
         e.preventDefault();
+        resetBorders();
+
         countClick++;
 
         for (let i = 0; i < portfolioImages.length; i++) {
@@ -233,8 +276,10 @@ function moveImges(tab) {
             } else if (count > 12) {
                 count = count % 12;
             }
+            
             portfolioImages[i].src = `assets/portfolio${count}.jpg`;
         }
+        
     }
 }
 
@@ -250,13 +295,9 @@ function selectTab(tab) {
     }
 }
 
-
-
 for (let elem of portfolioTabs) {
     selectTab(elem);
 }
-
-
 
 // Portfolio - borders
 function resetBorders() {
@@ -296,4 +337,5 @@ form.onsubmit = function (e) {
         text += `\nWithout describe`;
     }
     alert(text);
+    form.reset();
 }
